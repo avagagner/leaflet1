@@ -2,12 +2,12 @@ var mymap = L.map('mapid').setView([38.63775922635261, -90.28368046396037], 13);
 //https://a.tile.openstreetmap.org/{z}/{x}/{y}.png
 //'http://a.tile.stamen.com/toner/{z}/{x}/{y}.png'
 //https://wiki.openstreetmap.org/wiki/Tile_servers
-L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner-background/{z}/{x}/{y}{r}.{ext}', {
+L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.{ext}', {
 	attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
 	subdomains: 'abcd',
-	minZoom: 0,
-	maxZoom: 20,
-	ext: 'png'
+	minZoom: 1,
+	maxZoom: 16,
+	ext: 'jpg'
 }).addTo(mymap);
 
 var marker = L.marker([38.63672876590212, -90.24674730564345]).addTo(mymap);
